@@ -1,4 +1,4 @@
-# happi
+# { 'you' : happi }
 
 <div align="center">
  You are the the key to your own happiness. So let's find out who you are. {"you":happi} is a site for you and your friends to answer seemingly innocent questions whose answers say a lot more about you than you think. 
