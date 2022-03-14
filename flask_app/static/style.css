@@ -1,0 +1,250 @@
+*{
+    color: white
+}
+
+.body {
+    /* background-image: url('images/blue_background.png'); */
+    /* background-image: linear-gradient(to right, #2a395a, #212529);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover; */
+    width: 100%;
+    height: 800px
+}
+
+.daily {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    padding: 5px;
+    filter: brightness(60%);
+    flex-direction:column;
+    padding:20px;
+    text-align: center;
+    font-size: large;
+    margin-left: 10px;
+    margin-right:10px;
+    transition: 2s, height 2s, width 2s;
+}
+
+.daily:hover {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    filter: drop-shadow(8px 8px 10px rgb(255, 150, 241));
+    flex-direction:column;
+    text-align: center;
+    margin-left: 10px;
+    margin-right:10px;
+    width: 100%;
+    height: 840px;
+    transform: (50%, 50%);
+}
+
+
+.daily-question {
+    text-align: center;
+}
+
+.q1 {
+    /* background-image: linear-gradient(to bottom right, #d12374, #fd83bc); */
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.q2 {
+    /* background-image: linear-gradient(to bottom right, #b4529c, #fc96c5); */
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #b4529c, #fc96c5);
+
+}
+
+.q3 {
+    /* background-image: linear-gradient(to bottom right, #8a6caf, #b08adf); */
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #8a6caf, #b08adf);
+}
+
+.q4 {
+    /* background-image: linear-gradient(to bottom right, #577ccc, #99b6f5); */
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #577ccc, #99b6f5);
+}
+
+.q5 {
+    /* background-image: linear-gradient(to bottom right, #327cad, #80c6f5); */
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #327cad, #80c6f5);
+}
+
+.glow {
+    margin: 50px 0px;
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+.header {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+}
+
+.drop-shadow:hover {
+    filter: drop-shadow(10px 0px 20px white)
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.register {
+    display: flex;
+    flex-flow: column, wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: 20px;
+}
+
+.login {
+    flex: 1;
+    padding-left: 250px;
+}
+
+.col-sm-10 {
+    margin-bottom: 30px;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    height: 320%;
+}
+
+
+.nav-item:hover {
+    border: 1pt solid white;
+    padding: -3px;
+    font-weight: bold;
+    filter: drop-shadow(5px 0px 20px white)
+}
+
+.logo {
+    margin-bottom: 80px;
+}
+
+.profile {
+    height: 200px;
+    width: auto;
+    margin: 40px;
+}
+
+.prog {
+    height: 50px;
+    width: 600px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.vid {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* filter: drop-shadow(10px 10px 10px rgb(228, 159, 68)); */
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6a900, 0 0 40px #e6b000, 0 0 50px #e67b00, 0 0 60px #e6b000, 0 0 70px #e6a900;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+#bgvid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: fixed;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+#dna {
+    z-index: 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -98px;
+    right: 1187px;
+}
+
+.navbar2 {
+    margin-bottom: 40px;
+}
+
+.signin {
+    position: relative;
+    right: -274px;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+}
+
+.sign {
+    margin-left: 265px;
+}
+
+.janeesha {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0px;
+    margin:0px;
+}
+
+.jane {
+    margin-left: 86px;
+}
+
+.jim {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

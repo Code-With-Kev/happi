@@ -1,0 +1,51 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.webpage{
+    width: 120%;
+    height: 500px;
+}
+
+#bgvid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.nav-item:hover {
+    border: 1pt solid white;
+    padding: -3px;
+    margin: -5px;
+    font-weight: bold;
+    filter: drop-shadow(5px 0px 20px white)
+}
+
+.tab {
+    display: flex;
+}
+
+.navleft {
+    display: flex;
+    flex-wrap: wrap;
+    width: 380px;
+    margin-right: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    right: 225px;
+    margin-top: 20px;
+}
+
+.my-lg-0 {
+    margin-left: 10px;
+}

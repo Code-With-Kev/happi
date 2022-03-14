@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=NAMEOFFONTTTTTTTTTTTTTT">
+    <title>Results</title>
+</head>
+
+<body class="body">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/dashboard">{'you':happi}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/dashboard">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/add">Submit Question</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">Profile</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit" onclick="alert('Gurl, you know we aint got no search')">Search</button>
+            </form>
+        </div>
+    </nav>
+    <p class="header">SUBMIT A QUESTION</p>
+    <form class="col-10 mx-auto" action="/dashboard" method="post">
+        <div class="form-group justify-content-center ml-40">
+            <h1 for="description" class="text-white description">Description</h1>
+            <textarea class="form-control drop-shadow" id="exampleFormControlTextarea1" rows="6" name="description"
+                placeholder="Write your question here!"></textarea>
+        </div>
+        <h1 for="description" class="text-white description">Type</h1>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label text-white" for="inlineCheckbox1">Would You Rather</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label text-white" for="inlineCheckbox2">Multiple Choice</label>
+        </div>
+        <br>
+        <button type="button" class="btn btn-outline-light submit" onclick="alert('Thanks for the question gworlllll')">Submit</button>
+    </form>
+    <video playsinline autoplay muted loop poster="video_still" id="bgvid">
+        <source src="../static/images/login.webm" type="video/mp4">
+    </video>
+    <img width="600" src="..\static\images\jimmy_00000.png" alt="jim" class="jim">
+</body>
+
+</html>
